@@ -8,7 +8,7 @@ type Props = {
 
 const Section = (props: Props) => {
   return (
-    <section id={props.id || ""} className={`mt-40 ${props.className}`}>
+    <section id={props.id || ""} className={`mt-40 px-3 ${props.className}`}>
       {props.children}
     </section>
   );
