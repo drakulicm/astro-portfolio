@@ -19,7 +19,9 @@ const ProjectCard = (props: Props) => {
         className="rounded-[5px] object-cover ring-[5px] ring-accent border-opacity-50"
       />
       <span className="font-semibold leading-6">{props.title}</span>
-      <p className="text-subtitle text-xs leading-4 ">{props.description}</p>
+      <p className="text-subtitle text-xs leading-4 text-center">
+        {props.description}
+      </p>
       <div className="flex flex-row gap-4 w-full items-baseline">
         <a
           href={props.link}

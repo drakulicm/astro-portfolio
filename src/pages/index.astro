@@ -24,9 +24,11 @@ import markoImage from '../assets/marko.png'
 				<img src={arrowRight} alt="arrow right"/>
 			</a>
 		</Section>
-		<Section id="projects" className="flex flex-col items-center">
-			<Title>My Projects</Title>
-			<Subtitle>Stuff I've worked on in the past</Subtitle>
+		<Section id="projects" className="grid grid-cols-1 lg:grid-cols-3 gap-x-4">
+			<div class="col-span-1 lg:col-span-3">
+				<Title>My Projects</Title>
+				<Subtitle>Stuff I've worked on in the past</Subtitle>
+			</div>
 			<ProjectCard
 				className="mt-10"
 				title="Shoppe" 
