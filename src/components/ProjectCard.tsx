@@ -28,7 +28,13 @@ const ProjectCard = (props: Props) => {
           className="px-3 py-2 bg-accent rounded-[5px] font-semibold leading-4">
           Live demo
         </a>
-        <a className="leading-4">Source</a>
+        <a
+          href={props.gitLink}
+          target="_blank"
+          rel="noreferrer"
+          className="leading-4">
+          Source
+        </a>
       </div>
     </div>
   );
