@@ -9,6 +9,7 @@ import ProjectCard from '../components/ProjectCard';
 import shoppeImage from '../assets/shoppe.png';
 import utopiaImage from '../assets/utopiarp.png';
 import countriesImage from '../assets/countries.png';
+import markoImage from '../assets/marko.png'
 ---
 
 <Layout title="Marko Drakulic">
@@ -50,6 +51,17 @@ import countriesImage from '../assets/countries.png';
 				link="https://frontend-mentor-countries-challenge.vercel.app/" 
 				gitLink="https://github.com/Citrusthecrazy/frontend-mentor-countries-challenge"
 			/>
+		</Section>
+		<Section id="about" className="flex flex-col items-center">
+			<Title>About me</Title>
+			<Subtitle>Who am I and what do I do</Subtitle>
+			<img src={markoImage} alt="marko's image" class="w-[211px] h-[283px] rounded-[5px] ring-[5px] ring-accent/50 mt-10"/>
+			<p class="mt-9 text-sm leading-4 tracking-[2.5%]"> I’m a web developer from Belgrade, Serbia.
+				I specialize in javascript (typescript) development with the React library.
+				I am proficient in numerous libraries, frameworks and css preprocessors including, 
+				but not limited to Redux, Styled Components , 
+				Tailwindcss Next.js, SASS, React Query, Astro.
+			</p>
 		</Section>
 	</main>
 </Layout>
