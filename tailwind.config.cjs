@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         accent: "#EF3E36",
+        purple: "#6320EE",
+        subtitle: "#BDBDBD",
       },
     },
   },

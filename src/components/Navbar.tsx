@@ -4,7 +4,7 @@ import closeIcon from "../assets/close.svg";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <header className="flex flex-row justify-between items-center pt-3 px-3 lg:px-0">
       <span className="font-bold text-4xl">Marko</span>

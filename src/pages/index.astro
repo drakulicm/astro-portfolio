@@ -1,10 +1,55 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar';
+import arrowRight from '../assets/arrow-right.svg'
+import Section from '../components/Section';
+import Title from '../components/Title';
+import Subtitle from '../components/Subtitle';
+import ProjectCard from '../components/ProjectCard';
+import shoppeImage from '../assets/shoppe.png';
+import utopiaImage from '../assets/utopiarp.png';
+import countriesImage from '../assets/countries.png';
 ---
 
 <Layout title="Marko Drakulic">
 	<main class="container mx-auto">
 		<Navbar client:only="react"/>
+		<Section className="flex flex-col items-center">
+			<h1 class="text-[42px] leading-[63px] font-bold text-center">Marko Drakulic</h1>
+			<p class="text-lg leading-7 text-center font-medium">Yet another frontend developer</p>
+			<a href="/#projects" class="mt-4 font-[600] text-lg leading-7 bg-gradient-to-r from-accent to-purple px-3 py-[6px] rounded-[5px]">Check out my work</a>
+			<a href="/#about" class="font-medium text-xs leading-4 mt-4 flex flex-row gap-4">
+				<span>Or get to know me</span>
+				<img src={arrowRight} alt="arrow right"/>
+			</a>
+		</Section>
+		<Section className="flex flex-col items-center">
+			<Title>My Projects</Title>
+			<Subtitle>Stuff I've worked on in the past</Subtitle>
+			<ProjectCard
+				className="mt-10"
+				title="Shoppe" 
+				description="A mock e-commerce website built with Commerce.js headless CMS." 
+				image={shoppeImage} 
+				link="https://shoppe-sable.vercel.app/" 
+				gitLink="https://github.com/Citrusthecrazy/shoppe"
+			/>
+			<ProjectCard
+				className="mt-10"
+				title="Utopia Roleplay" 
+				description="A full stack website for a GTA V game server with paypal integration for donations." 
+				image={utopiaImage} 
+				link="https://utopia-website-v2.vercel.app/" 
+				gitLink="https://github.com/Citrusthecrazy/utopia-website-v2"
+			/>
+			<ProjectCard
+				className="mt-10"
+				title="Countries" 
+				description="A frontend mentor intermediate challenge using countries REST API." 
+				image={countriesImage} 
+				link="https://frontend-mentor-countries-challenge.vercel.app/" 
+				gitLink="https://github.com/Citrusthecrazy/frontend-mentor-countries-challenge"
+			/>
+		</Section>
 	</main>
 </Layout>
