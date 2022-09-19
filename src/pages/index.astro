@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+---
+
+<Layout title="Marko Drakulic">
+	<main class="container mx-auto">
+		<Navbar client:only="react"/>
+	</main>
+</Layout>
