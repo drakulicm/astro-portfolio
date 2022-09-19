@@ -3,11 +3,14 @@ import type { ReactNode } from "react";
 type Props = {
   children: ReactNode;
   className?: string;
+  id?: string;
 };
 
 const Section = (props: Props) => {
   return (
-    <section className={`mt-40 ${props.className}`}>{props.children}</section>
+    <section id={props.id || ""} className={`mt-40 ${props.className}`}>
+      {props.children}
+    </section>
   );
 };
 
