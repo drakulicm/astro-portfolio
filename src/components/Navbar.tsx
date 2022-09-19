@@ -41,7 +41,7 @@ const Navbar = () => {
             <img
               src={closeIcon}
               className="absolute top-4 right-3 cursor-pointer h-6 w-6"
-              alt="menu"
+              alt="meni close"
               onClick={() => setIsMobileMenuOpen(false)}
             />
           </div>
