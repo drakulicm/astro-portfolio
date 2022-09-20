@@ -8,9 +8,12 @@ const Navbar = () => {
   const handleCloseMobileNav = () => {
     setIsMobileMenuOpen(false);
   };
+
   return (
-    <header className="flex flex-row justify-between items-center pt-3 px-3 lg:px-0">
-      <span className="font-bold text-4xl">Marko</span>
+    <header className="container mx-auto fixed top-0 left-0 right-0 bg-[#121212] flex flex-row justify-between items-center py-3 px-3 lg:px-0">
+      <a href="/" className="font-bold text-4xl">
+        Marko
+      </a>
       <nav className="hidden lg:block">
         <ul className="flex flex-row gap-16">
           <NavItem to="/" text="Home" />

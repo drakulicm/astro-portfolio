@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useOnScreen } from "../hooks/useOnScreen";
 
 type Props = {
   children: ReactNode;

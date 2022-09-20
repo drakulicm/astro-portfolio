@@ -9,9 +9,7 @@ const NavItem = (props: Props) => {
     <li className="relative text-xl font-medium group" onClick={props.onClick}>
       <a href={props.to}>{props.text}</a>
       <div
-        className={`absolute h-[2px] bg-accent -bottom-[1px] ${
-          window.location.pathname === props.to ? "w-full" : "w-0"
-        } group-hover:w-full  transition-all duration-300`}
+        className={`absolute h-[2px] bg-accent -bottom-[1px] w-0 group-hover:w-full  transition-all duration-300`}
       />
     </li>
   );
