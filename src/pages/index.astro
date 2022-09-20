@@ -10,6 +10,10 @@ import shoppeImage from '../assets/shoppe.png';
 import utopiaImage from '../assets/utopiarp.png';
 import countriesImage from '../assets/countries.png';
 import markoImage from '../assets/marko.png'
+import linkedIn from '../assets/linkedin.svg'
+import github from '../assets/github.svg'
+import gmail from '../assets/gmail.svg'
+import Footer from '../components/Footer'
 ---
 
 <Layout title="Marko Drakulic">
@@ -65,5 +69,33 @@ import markoImage from '../assets/marko.png'
 				Tailwindcss Next.js, SASS, React Query, Astro.
 			</p>
 		</Section>
+		<Section id="socials" className="flex flex-col items-center">
+			<Title>Socials</Title>
+			<Subtitle>Where can you find me</Subtitle>
+			<div class="grid grid-cols-2 gap-x-6 mt-10">
+				<a
+				href="https://www.linkedin.com/in/marko-drakulic-028092206/"
+				rel="noreferrer"
+				target="_blank" class="flex flex-col gap-2"
+				>
+					<img src={linkedIn} alt="linkedin"/>
+					<span class="text-sm text-center">LinkedIn</span>
+				</a>
+				<a
+				href="https://github.com/Citrusthecrazy"
+				rel="noreferrer"
+				target="_blank" class="flex flex-col gap-2"
+				>
+					<img src={github} alt="linkedin"/>
+					<span class="text-sm text-center">Github</span>
+				</a>
+				<p class="col-span-2 text-xs text-center mt-4">Or you can e-mail me at</p>
+				<div class="flex flex-col gap-2 col-span-2 items-center justify-self-center">
+					<img src={gmail} alt="linkedin "/>
+					<span class="text-sm">drakulic.marko1@gmail.com</span>
+				</div>
+			</div>
+		</Section>
+		<Footer/>
 	</main>
 </Layout>
