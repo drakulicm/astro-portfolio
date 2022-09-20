@@ -20,16 +20,16 @@ import Footer from '../components/Footer'
 	<Navbar client:only="react"/>
 	<main class="container mx-auto">
 		<Section className="flex flex-col items-center">
-			<h1 class="text-[42px] leading-[63px] font-bold text-center">Marko Drakulic</h1>
-			<p class="text-lg leading-7 text-center font-medium whitespace-nowrap">Yet another frontend developer</p>
-			<a href="/#projects" class="mt-4 font-[600] text-lg leading-7 bg-gradient-to-r from-accent to-purple px-3 py-[6px] rounded-[5px] text-center whitespace-nowrap">Check out my work</a>
-			<a href="/#about" class="font-medium text-xs leading-4 mt-4 flex flex-row gap-4">
+			<h1 class="text-[42px] leading-[63px] font-bold text-center lg:text-8xl">Marko Drakulic</h1>
+			<p class="text-lg leading-7 text-center font-medium whitespace-nowrap lg:text-4xl">Yet another frontend developer</p>
+			<a href="/#projects" class="mt-4 font-[600] text-lg leading-7 bg-gradient-to-r from-accent to-purple px-3 py-[6px] rounded-[5px] text-center whitespace-nowrap lg:text-4xl lg:py-[.5em] lg:px-[1.25em]">Check out my work</a>
+			<a href="/#about" class="font-medium text-xs leading-4 mt-4 flex flex-row gap-4 lg:text-xl">
 				<span>Or get to know me</span>
 				<img src={arrowRight} alt="arrow right"/>
 			</a>
 		</Section>
-		<Section id="projects" className="grid grid-cols-1 lg:grid-cols-3 gap-x-4">
-			<div class="col-span-1 lg:col-span-3">
+		<Section id="projects" className="grid grid-cols-1 lg:grid-cols-3 gap-x-[336px] place-content-center">
+			<div class="col-span-1 lg:col-span-3 lg:justify-self-start">
 				<Title>My Projects</Title>
 				<Subtitle>Stuff I've worked on in the past</Subtitle>
 			</div>
@@ -58,41 +58,43 @@ import Footer from '../components/Footer'
 				gitLink="https://github.com/Citrusthecrazy/frontend-mentor-countries-challenge"
 			/>
 		</Section>
-		<Section id="about" className="flex flex-col items-center">
+		<Section id="about" className="flex flex-col items-center lg:items-start">
 			<Title>About me</Title>
 			<Subtitle>Who am I and what do I do</Subtitle>
-			<img src={markoImage} alt="marko's image" class="w-[211px] h-[283px] rounded-[5px] ring-[5px] ring-accent/50 mt-10"/>
-			<p class="mt-9 text-sm leading-4 tracking-[2.5%]"> I’m a web developer from Belgrade, Serbia.
-				I specialize in javascript (typescript) development with the React library.
-				I am proficient in numerous libraries, frameworks and css preprocessors including, 
-				but not limited to Redux, Styled Components , 
-				Tailwindcss Next.js, SASS, React Query, Astro.
-			</p>
+			<div class="grid grid-cols-1 place-items-center lg:grid-cols-2 lg:place-items-stretch">
+				<img src={markoImage} alt="marko's image" class="w-[211px] h-[283px] rounded-[5px] ring-[5px] ring-accent/50 mt-10 lg:w-[356px] lg:h-[477px]"/>
+				<p class="mt-9 text-sm leading-4 tracking-[2.5%] lg:text-xl lg:grid lg:place-content-center"> I’m a web developer from Belgrade, Serbia.
+					I specialize in javascript (typescript) development with the React library.
+					I am proficient in numerous libraries, frameworks and css preprocessors including, 
+					but not limited to Redux, Styled Components , 
+					Tailwindcss Next.js, SASS, React Query, Astro.
+				</p>
+			</div>
 		</Section>
-		<Section id="socials" className="flex flex-col items-center">
+		<Section id="socials" className="flex flex-col items-center lg:items-start">
 			<Title>Socials</Title>
 			<Subtitle>Where can you find me</Subtitle>
-			<div class="grid grid-cols-2 gap-x-6 mt-10">
+			<div class="grid grid-cols-2 gap-x-6 mt-10 self-center">
 				<a
 				href="https://www.linkedin.com/in/marko-drakulic-028092206/"
 				rel="noreferrer"
-				target="_blank" class="flex flex-col gap-2"
+				target="_blank" class="flex flex-col gap-2 lg:w-[139px]"
 				>
 					<img src={linkedIn} alt="linkedin"/>
-					<span class="text-sm text-center">LinkedIn</span>
+					<span class="text-sm text-center lg:text-2xl">LinkedIn</span>
 				</a>
 				<a
 				href="https://github.com/Citrusthecrazy"
 				rel="noreferrer"
-				target="_blank" class="flex flex-col gap-2"
+				target="_blank" class="flex flex-col gap-2 lg:w-[139px]"
 				>
 					<img src={github} alt="linkedin"/>
-					<span class="text-sm text-center">Github</span>
+					<span class="text-sm text-center lg:text-2xl">Github</span>
 				</a>
-				<p class="col-span-2 text-xs text-center mt-4">Or you can e-mail me at</p>
-				<div class="flex flex-col gap-2 col-span-2 items-center justify-self-center">
-					<img src={gmail} alt="linkedin "/>
-					<span class="text-sm">drakulic.marko1@gmail.com</span>
+				<p class="col-span-2 text-xs text-center mt-4 lg:text-base">Or you can e-mail me at</p>
+				<div class="flex flex-col gap-2 col-span-2 items-center justify-self-center ">
+					<img src={gmail} alt="linkedin " class="lg:w-[139px]"/>
+					<span class="text-sm lg:text-2xl">drakulic.marko1@gmail.com</span>
 				</div>
 			</div>
 		</Section>

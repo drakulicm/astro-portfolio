@@ -6,7 +6,7 @@ type Props = {
 
 const Subtitle = (props: Props) => {
   return (
-    <div className="text-xs leading-4 text-subtitle text-center whitespace-nowrap">
+    <div className="text-xs leading-4 text-subtitle text-center whitespace-nowrap lg:text-left">
       {props.children}
     </div>
   );

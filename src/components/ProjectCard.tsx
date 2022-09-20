@@ -12,7 +12,7 @@ type Props = {
 const ProjectCard = (props: Props) => {
   return (
     <div
-      className={`flex flex-col gap-6 w-full items-center ${props.className}`}>
+      className={`flex flex-col gap-6 w-full items-center lg:max-w-[287px] ${props.className}`}>
       <img
         src={props.image}
         alt={props.title}
